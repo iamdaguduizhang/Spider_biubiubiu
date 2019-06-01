@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <ul>
+        <li> id| name| search_engine| keyword_search| page_num| status</li>
+    {% for athlete in list %}
+        <li>
+            <table border="1">
+            <tr>
+                <td style="width:20px">{{ athlete.id }}</td>
+                <td style="width:100px">{{ athlete.name }}</td>
+                <td style="width:100px">{{ athlete.search_engine }}</td>
+                <td style="width:100px">{{ athlete.keyword_search }}</td>
+                <td style="width:100px">{{ athlete.page_num }}</td>
+                <td style="width:100px">{{ athlete.status}}</td>
+
+            </tr>
+            </table>
+
+        </li>
+    {% endfor %}
+</ul>
+</body>
+</html>
